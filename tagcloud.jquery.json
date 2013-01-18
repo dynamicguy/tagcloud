@@ -1,33 +1,41 @@
-me": "tagcloud",
-  "title": "jQuery tag cloud",
-  "description": "jQuery plugin for tag cloud and animation support.",
-  "keywords": [
-    "tagcloud",
-    "animation"
-  ],
-  "version": "0.1.3",
-  "author": {
-    "name": "jQuery Foundation and other contributors",
-    "url": "https://github.com/dynamicguy/AUTHORS.txt"
-  },
-  "maintainers": [
-    {
-      "name": "Nurul Ferdous",
-      "email": "nurul@ferdous",
-      "url": "http://dynamicguy.com"
-    }
-  ],
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/dynamicguy/tagcloud/blob/2.1.2/MIT-LICENSE.txt"
-    }
-  ],
-  "bugs": "https://github.com/dynamicguy/tagcloud/issues",
-  "homepage": "https://github.com/dynamicguy/tagcloud",
-  "docs": "https://github.com/dynamicguy/tagcloud",
-  "download": "http://code.jquery.com/#tagcloud",
-  "dependencies": {
-    "jquery": ">=1.5"
-  }
+{
+    "author": {
+        "name": "Nurul Ferdous", 
+        "email": "nurul@ferdo.us", 
+        "url": "http://dynamicguy.com"
+    }, 
+    "bugs": {
+        "url": "https://github.com/dynamicguy/tagcloud/issues"
+    }, 
+    "demo": "http://iwashereclub.com/", 
+    "dependencies": {
+        "jquery": ">=1.4.3"
+    }, 
+    "description": "jQuery Tag Cloud looking like a 3d sphere. 3d animated tag cloud generated from an array. you can easily customize it by tweaking the params.", 
+    "docs": "https://github.com/dynamicguy/tagcloud/wiki", 
+    "homepage": "http://dynamicguy.com/jquery-tagcloud", 
+    "keywords": [
+        "tag", 
+        "cloud", 
+        "tag cloud", 
+        "animation", 
+        "visualization"
+    ], 
+    "licenses": [
+        {
+            "type": "MIT", 
+            "url": "http://opensource.org/licenses/MIT"
+        }, 
+        {
+            "type": "GPLv2", 
+            "url": "http://opensource.org/licenses/gpl-2.0"
+        }
+    ], 
+    "name": "tagcloud", 
+    "repository": {
+        "type": "git", 
+        "url": "git@github.com:dynamicguy/tagcloud.git"
+    }, 
+    "title": "jQuery Tag Cloud", 
+    "version": "1.1.7"
 }
