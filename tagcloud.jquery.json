@@ -1,4 +1,5 @@
-me": "tagcloud",
+{
+  "name": "tagcloud",
   "title": "jQuery tag cloud",
   "description": "jQuery plugin for tag cloud and animation support.",
   "keywords": [
