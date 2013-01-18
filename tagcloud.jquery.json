@@ -5,10 +5,10 @@ me": "tagcloud",
     "tagcloud",
     "animation"
   ],
-  "version": "0.1.3",
+  "version": "1.1.3",
   "author": {
     "name": "jQuery Foundation and other contributors",
-    "url": "https://github.com/dynamicguy/AUTHORS.txt"
+    "url": "https://github.com/dynamicguy/tagcloud/blob/master/AUTHORS.txt"
   },
   "maintainers": [
     {
@@ -19,14 +19,14 @@ me": "tagcloud",
   ],
   "licenses": [
     {
-      "type": "MIT",
-      "url": "https://github.com/dynamicguy/tagcloud/blob/2.1.2/MIT-LICENSE.txt"
+      "type": "Apache 2.0",
+      "url": "https://github.com/dynamicguy/tagcloud/blob/master/LICENSE"
     }
   ],
   "bugs": "https://github.com/dynamicguy/tagcloud/issues",
   "homepage": "https://github.com/dynamicguy/tagcloud",
-  "docs": "https://github.com/dynamicguy/tagcloud",
-  "download": "http://code.jquery.com/#tagcloud",
+  "docs": "https://github.com/dynamicguy/tagcloud/wiki",
+  "download": "https://github.com/dynamicguy/tagcloud/archive/master.zip",
   "dependencies": {
     "jquery": ">=1.5"
   }
