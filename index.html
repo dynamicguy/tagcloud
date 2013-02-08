@@ -1,66 +1,377 @@
-<!doctype html>
-<html>
-  <head>
+
+<!doctype html public "lice">
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Tagcloud by dynamicguy</title>
+    <title>jquery tagcloud</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Tagcloud</h1>
-        <p>jquery tagcloud</p>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="https://raw.github.com/dynamicguy/tagcloud/master/src/tagcloud.jquery.js"></script>
 
-        <p class="view"><a href="https://github.com/dynamicguy/tagcloud">View the Project on GitHub <small>dynamicguy/tagcloud</small></a></p>
+    <style>
+            /* Mother effin brute force CSS reset... */
+            /* Always include after any other CSS */
+        * {
+            resize: none;
+            border: none;
+            outline: none;
+            text-decoration: none;
+            padding: 0px;
+            margin: 0px;
+            list-style-type: none;
+        }
+    </style>
 
 
+<script type="text/javascript">
+    var settings = {
+    //height of sphere container
+    height: 400,
+    //width of sphere container
+    width: 400,
+    //radius of sphere
+    radius: 150,
+    //rotation speed
+    speed: 3,
+    //sphere rotations slower
+    slower: 0.9,
+    //delay between update position
+    timer: 5,
+    //dependence of a font size on axis Z
+    fontMultiplier: 15,
+    //tag css stylies on mouse over
+    hoverStyle: {
+        border: 'none',
+        color: '#0b2e6f'
+    },
+    //tag css stylies on mouse out
+    mouseOutStyle: {
+        border: '',
+        color: ''
+    }
+    };
+
+    $(document).ready(function(){
+        $('#tagcloud').tagoSphere(settings);
+    });
+</script>
+</head>
+<body>
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+     chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+
+    <div id="tagcloud">
         <ul>
-          <li><a href="https://github.com/dynamicguy/tagcloud/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/dynamicguy/tagcloud/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/dynamicguy/tagcloud">View On <strong>GitHub</strong></a></li>
+            <li><a href="#">dazzlingly</a></li>
+            <li><a href="#">natatory</a></li>
+            <li><a href="#">automa</a></li>
+            <li><a href="#">vinologist</a></li>
+            <li><a href="#">castrate</a></li>
+            <li><a href="#">airfoil</a></li>
+            <li><a href="#">unpaintedly</a></li>
+            <li><a href="#">caffetannic</a></li>
+            <li><a href="#">fissirostrate</a></li>
+            <li><a href="#">gingivectomy</a></li>
+            <li><a href="#">pinprick</a></li>
+            <li><a href="#">forecount</a></li>
+            <li><a href="#">anorthophyre</a></li>
+            <li><a href="#">tram</a></li>
+            <li><a href="#">democratian</a></li>
+            <li><a href="#">ungovernedness</a></li>
+            <li><a href="#">anaesthesia</a></li>
+            <li><a href="#">Eutychian</a></li>
+            <li><a href="#">insalutary</a></li>
+            <li><a href="#">amphilogism</a></li>
+            <li><a href="#">reshunt</a></li>
+            <li><a href="#">wende</a></li>
+            <li><a href="#">ope</a></li>
+            <li><a href="#">Bomarea</a></li>
+            <li><a href="#">inadequative</a></li>
+            <li><a href="#">ovalish</a></li>
+            <li><a href="#">rhizopod</a></li>
+            <li><a href="#">stethoscopist</a></li>
+            <li><a href="#">riverman</a></li>
+            <li><a href="#">underbuoy</a></li>
+            <li><a href="#">Pindarist</a></li>
+            <li><a href="#">bacteriodiagnosis</a></li>
+            <li><a href="#">stonecutter</a></li>
+            <li><a href="#">unlanterned</a></li>
+            <li><a href="#">leawill</a></li>
+            <li><a href="#">hooky</a></li>
+            <li><a href="#">wisewoman</a></li>
+            <li><a href="#">gerundively</a></li>
+            <li><a href="#">minny</a></li>
+            <li><a href="#">aminosuccinamic</a></li>
+            <li><a href="#">theaterless</a></li>
+            <li><a href="#">heal</a></li>
+            <li><a href="#">synchronically</a></li>
+            <li><a href="#">devilman</a></li>
+            <li><a href="#">unbilleted</a></li>
+            <li><a href="#">galactotherapy</a></li>
+            <li><a href="#">ninepenny</a></li>
+            <li><a href="#">Andesic</a></li>
+            <li><a href="#">trainbolt</a></li>
+            <li><a href="#">Daza</a></li>
+            <li><a href="#">porterage</a></li>
+            <li><a href="#">innoxiousness</a></li>
+            <li><a href="#">sextuplex</a></li>
+            <li><a href="#">pharmacologic</a></li>
+            <li><a href="#">overlip</a></li>
+            <li><a href="#">Paiconeca</a></li>
+            <li><a href="#">grooving</a></li>
+            <li><a href="#">sublinear</a></li>
+            <li><a href="#">hieroglyphically</a></li>
+            <li><a href="#">Scorpionida</a></li>
+            <li><a href="#">affectedness</a></li>
+            <li><a href="#">umbilicus</a></li>
+            <li><a href="#">nostochine</a></li>
+            <li><a href="#">counterhaft</a></li>
+            <li><a href="#">bivaulted</a></li>
+            <li><a href="#">subplow</a></li>
+            <li><a href="#">untrimmed</a></li>
+            <li><a href="#">gematria</a></li>
+            <li><a href="#">impenitentness</a></li>
+            <li><a href="#">nuptiality</a></li>
+            <li><a href="#">swagger</a></li>
+            <li><a href="#">preservatory</a></li>
+            <li><a href="#">inexpensiveness</a></li>
+            <li><a href="#">error</a></li>
+            <li><a href="#">undeception</a></li>
+            <li><a href="#">knothole</a></li>
+            <li><a href="#">osteocomma</a></li>
+            <li><a href="#">psychoanalytically</a></li>
+            <li><a href="#">propellable</a></li>
+            <li><a href="#">polyandrianism</a></li>
+            <li><a href="#">tenesmus</a></li>
+            <li><a href="#">cryptogenous</a></li>
+            <li><a href="#">quiddity</a></li>
+            <li><a href="#">Yankee</a></li>
+            <li><a href="#">xylate</a></li>
+            <li><a href="#">phenocoll</a></li>
+            <li><a href="#">afternight</a></li>
+            <li><a href="#">Merluccius</a></li>
+            <li><a href="#">hypothecation</a></li>
+            <li><a href="#">schiller</a></li>
+            <li><a href="#">Suberitidae</a></li>
+            <li><a href="#">untunefully</a></li>
+            <li><a href="#">riddle</a></li>
+            <li><a href="#">tetramorphic</a></li>
+            <li><a href="#">overnarrow</a></li>
+            <li><a href="#">bromhydrate</a></li>
+            <li><a href="#">scalenous</a></li>
+            <li><a href="#">cuckooflower</a></li>
+            <li><a href="#">inderivative</a></li>
+            <li><a href="#">prelegend</a></li>
+            <li><a href="#">microsomia</a></li>
+            <li><a href="#">crosse</a></li>
+            <li><a href="#">underschool</a></li>
+            <li><a href="#">outweight</a></li>
+            <li><a href="#">stabling</a></li>
+            <li><a href="#">amianthoidal</a></li>
+            <li><a href="#">piperide</a></li>
+            <li><a href="#">cleavelandite</a></li>
+            <li><a href="#">Otomian</a></li>
+            <li><a href="#">censureship</a></li>
+            <li><a href="#">nonapostatizing</a></li>
+            <li><a href="#">nonflowing</a></li>
+            <li><a href="#">songwright</a></li>
+            <li><a href="#">andalusite</a></li>
+            <li><a href="#">doorstop</a></li>
+            <li><a href="#">morphinism</a></li>
+            <li><a href="#">Concord</a></li>
+            <li><a href="#">maieutic</a></li>
+            <li><a href="#">tetrandrous</a></li>
+            <li><a href="#">coxcombhood</a></li>
+            <li><a href="#">arbutinase</a></li>
+            <li><a href="#">epilimnion</a></li>
+            <li><a href="#">aneurism</a></li>
+            <li><a href="#">Protomonadina</a></li>
+            <li><a href="#">hemometer</a></li>
+            <li><a href="#">fugitive</a></li>
+            <li><a href="#">anapterygotism</a></li>
+            <li><a href="#">subinguinal</a></li>
+            <li><a href="#">unbothering</a></li>
+            <li><a href="#">emendate</a></li>
+            <li><a href="#">nonconcurrence</a></li>
+            <li><a href="#">wellhole</a></li>
+            <li><a href="#">questionous</a></li>
+            <li><a href="#">unarbitrated</a></li>
+            <li><a href="#">washbowl</a></li>
+            <li><a href="#">wittawer</a></li>
+            <li><a href="#">loxic</a></li>
+            <li><a href="#">sthenia</a></li>
+            <li><a href="#">plateful</a></li>
+            <li><a href="#">salineness</a></li>
+            <li><a href="#">undepicted</a></li>
+            <li><a href="#">autocatalysis</a></li>
+            <li><a href="#">bewilderedness</a></li>
+            <li><a href="#">subnatural</a></li>
+            <li><a href="#">nicolayite</a></li>
+            <li><a href="#">integrifolious</a></li>
+            <li><a href="#">uncurricularized</a></li>
+            <li><a href="#">catalytic</a></li>
+            <li><a href="#">K</a></li>
+            <li><a href="#">upturn</a></li>
+            <li><a href="#">ericeticolous</a></li>
+            <li><a href="#">yellowwood</a></li>
+            <li><a href="#">Sumdum</a></li>
+            <li><a href="#">hysteroscope</a></li>
+            <li><a href="#">simony</a></li>
+            <li><a href="#">overrestore</a></li>
+            <li><a href="#">firearmed</a></li>
+            <li><a href="#">doctorfish</a></li>
+            <li><a href="#">Costaea</a></li>
+            <li><a href="#">consentingly</a></li>
+            <li><a href="#">Angoumian</a></li>
+            <li><a href="#">bumbleberry</a></li>
+            <li><a href="#">tunnelmaking</a></li>
+            <li><a href="#">overtenderly</a></li>
+            <li><a href="#">expergefaction</a></li>
+            <li><a href="#">intraventricular</a></li>
+            <li><a href="#">unsignificancy</a></li>
+            <li><a href="#">deflector</a></li>
+            <li><a href="#">truism</a></li>
+            <li><a href="#">otosalpinx</a></li>
+            <li><a href="#">chamberletted</a></li>
+            <li><a href="#">unbeauteous</a></li>
+            <li><a href="#">Jugulares</a></li>
+            <li><a href="#">pith</a></li>
+            <li><a href="#">outhear</a></li>
+            <li><a href="#">immaculateness</a></li>
+            <li><a href="#">bonnibel</a></li>
+            <li><a href="#">xerotherm</a></li>
+            <li><a href="#">onrush</a></li>
+            <li><a href="#">binocularly</a></li>
+            <li><a href="#">insignia</a></li>
+            <li><a href="#">Baloskionaceae</a></li>
+            <li><a href="#">vapulatory</a></li>
+            <li><a href="#">stoechas</a></li>
+            <li><a href="#">spurtle</a></li>
+            <li><a href="#">speedily</a></li>
+            <li><a href="#">intermittedly</a></li>
+            <li><a href="#">pie</a></li>
+            <li><a href="#">urohematin</a></li>
+            <li><a href="#">pervertedness</a></li>
+            <li><a href="#">summability</a></li>
+            <li><a href="#">unspinsterlike</a></li>
+            <li><a href="#">guilty</a></li>
+            <li><a href="#">equivalence</a></li>
+            <li><a href="#">ovaloid</a></li>
+            <li><a href="#">goodliness</a></li>
+            <li><a href="#">dainteth</a></li>
+            <li><a href="#">umiak</a></li>
+            <li><a href="#">faunistically</a></li>
+            <li><a href="#">spumose</a></li>
+            <li><a href="#">supercrowned</a></li>
+            <li><a href="#">preludial</a></li>
+            <li><a href="#">unbusied</a></li>
+            <li><a href="#">sleeting</a></li>
+            <li><a href="#">traitor</a></li>
+            <li><a href="#">professionalism</a></li>
+            <li><a href="#">auntlike</a></li>
+            <li><a href="#">shieldtail</a></li>
+            <li><a href="#">cowthwort</a></li>
+            <li><a href="#">unspitted</a></li>
+            <li><a href="#">alite</a></li>
+            <li><a href="#">alliteration</a></li>
+            <li><a href="#">omnific</a></li>
+            <li><a href="#">slosher</a></li>
+            <li><a href="#">posthitis</a></li>
+            <li><a href="#">unrevealed</a></li>
+            <li><a href="#">brutality</a></li>
+            <li><a href="#">circumventive</a></li>
+            <li><a href="#">Melogrammataceae</a></li>
+            <li><a href="#">sputative</a></li>
+            <li><a href="#">overabstemious</a></li>
+            <li><a href="#">squarrulose</a></li>
+            <li><a href="#">subsistent</a></li>
+            <li><a href="#">nonmetallic</a></li>
+            <li><a href="#">prelate</a></li>
+            <li><a href="#">interoceanic</a></li>
+            <li><a href="#">celibatory</a></li>
+            <li><a href="#">jactant</a></li>
+            <li><a href="#">weasellike</a></li>
+            <li><a href="#">cyclothyme</a></li>
+            <li><a href="#">apodal</a></li>
+            <li><a href="#">metagalactic</a></li>
+            <li><a href="#">cheapen</a></li>
+            <li><a href="#">platycoria</a></li>
+            <li><a href="#">mesorectal</a></li>
+            <li><a href="#">polylithic</a></li>
+            <li><a href="#">Parasuchia</a></li>
+            <li><a href="#">bronchia</a></li>
+            <li><a href="#">hypochnose</a></li>
+            <li><a href="#">causticization</a></li>
+            <li><a href="#">chroococcaceous</a></li>
+            <li><a href="#">colonist</a></li>
+            <li><a href="#">antilogous</a></li>
+            <li><a href="#">Erpetoichthys</a></li>
+            <li><a href="#">lactoproteid</a></li>
+            <li><a href="#">appetite</a></li>
+            <li><a href="#">delineate</a></li>
+            <li><a href="#">polytomous</a></li>
+            <li><a href="#">parheliacal</a></li>
+            <li><a href="#">loweringness</a></li>
+            <li><a href="#">dragontail</a></li>
+            <li><a href="#">ultimity</a></li>
+            <li><a href="#">Orleanist</a></li>
+            <li><a href="#">cephalogenesis</a></li>
+            <li><a href="#">willyer</a></li>
+            <li><a href="#">unhustling</a></li>
+            <li><a href="#">polydactylism</a></li>
+            <li><a href="#">scriever</a></li>
+            <li><a href="#">spantoon</a></li>
+            <li><a href="#">Goclenian</a></li>
+            <li><a href="#">outdoor</a></li>
+            <li><a href="#">unbeknownst</a></li>
+            <li><a href="#">convictiveness</a></li>
+            <li><a href="#">scrotitis</a></li>
+            <li><a href="#">Tabriz</a></li>
+            <li><a href="#">bigener</a></li>
+            <li><a href="#">chiefly</a></li>
+            <li><a href="#">bearess</a></li>
+            <li><a href="#">untrussed</a></li>
+            <li><a href="#">clericality</a></li>
+            <li><a href="#">lagen</a></li>
+            <li><a href="#">Gervas</a></li>
+            <li><a href="#">rerebrace</a></li>
+            <li><a href="#">mott</a></li>
+            <li><a href="#">vertimeter</a></li>
+            <li><a href="#">tormentous</a></li>
+            <li><a href="#">jagua</a></li>
+            <li><a href="#">stromatology</a></li>
+            <li><a href="#">nonstatic</a></li>
+            <li><a href="#">rangey</a></li>
+            <li><a href="#">overzealous</a></li>
+            <li><a href="#">manufacturess</a></li>
+            <li><a href="#">affrighter</a></li>
+            <li><a href="#">Zirbanit</a></li>
+            <li><a href="#">paradigmatic</a></li>
+            <li><a href="#">unexpressive</a></li>
+            <li><a href="#">Gelidiaceae</a></li>
+            <li><a href="#">noodledom</a></li>
+            <li><a href="#">deoxygenation</a></li>
+            <li><a href="#">endoneurial</a></li>
+            <li><a href="#">convenee</a></li>
+            <li><a href="#">leapable</a></li>
+            <li><a href="#">maxilliform</a></li>
+            <li><a href="#">filching</a></li>
+            <li><a href="#">unavoidably</a></li>
+            <li><a href="#">szlachta</a></li>
+            <li><a href="#">azotoluene</a></li>
+            <li><a href="#">inchoate</a></li>
+            <li><a href="#">strikeless</a></li>
+            <li><a href="#">gadding</a></li>
         </ul>
-      </header>
-      <section>
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/dynamicguy">dynamicguy</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+
+
+</body>
 </html>
