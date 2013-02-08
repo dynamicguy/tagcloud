@@ -7,13 +7,13 @@
     "bugs": {
         "url": "https://github.com/dynamicguy/tagcloud/issues"
     }, 
-    "demo": "http://iwashereclub.com/", 
+    "demo": "http://dynamicguy.github.com/tagcloud/", 
     "dependencies": {
         "jquery": ">=1.4.3"
     }, 
     "description": "jQuery Tag Cloud looking like a 3d sphere. 3d animated tag cloud generated from an array. you can easily customize it by tweaking the params.", 
     "docs": "https://github.com/dynamicguy/tagcloud/wiki", 
-    "homepage": "http://dynamicguy.com/jquery-tagcloud", 
+    "homepage": "http://dynamicguy.github.com/tagcloud/", 
     "keywords": [
         "tag", 
         "cloud", 
@@ -37,5 +37,5 @@
         "url": "git@github.com:dynamicguy/tagcloud.git"
     }, 
     "title": "jQuery Tag Cloud", 
-    "version": "1.1.9"
+    "version": "1.2.1"
 }
