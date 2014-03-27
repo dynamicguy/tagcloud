@@ -1,9 +1,9 @@
 /**
- * jQuery tagoSphere plugin
+ * jQuery TagCloud plugin
  *
- * @version 1:0 (12-MAY-2009)
+ * @version 1.2.2 (12-MAY-2009)
  * @author Nurul Ferdous <nurul_ferdous@yahoo.com>
- * @requires jQuery v1.2.2 or later Examples and documentation at:
+ * @requires jQuery v1.4.3 or later Examples and documentation at:
  * http://dynamicguy.com/ Dual licensed under the MIT and GPL
  * licenses: http://www.opensource.org/licenses/mit-license.php
  * http://www.gnu.org/licenses/gpl.html
