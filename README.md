@@ -1,4 +1,5 @@
 # jQuery tag cloud plugin
+jQuery Tag Cloud looking like a 3d sphere. 3d animated tag cloud generated from an array. you can easily customize it by tweaking the params.
 
 ## Quick start
 Here is an example for you. You can also view this demo [here](https://github.com/dynamicguy/tagcloud/).
